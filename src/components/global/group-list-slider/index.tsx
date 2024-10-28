@@ -56,7 +56,10 @@ export const GroupListSlider = ({
                                         value={item.path}
                                         {...register("category")}
                                     />
-                                    <GroupListItem {...item} selected={selected} />
+                                    <GroupListItem
+                                        {...item}
+                                        selected={selected}
+                                    />
                                 </span>
                             </Label>
                         )

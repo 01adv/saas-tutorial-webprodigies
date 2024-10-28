@@ -10,7 +10,11 @@ type Props = {
 const CreateGroup = ({ userId, affiliate, stripeId }: Props) => {
     return (
         <StripeElements>
-            <PaymentForm userId={userId} affiliate={affiliate} stripeId={stripeId} />
+            <PaymentForm
+                userId={userId}
+                affiliate={affiliate}
+                stripeId={stripeId}
+            />
         </StripeElements>
     )
 }

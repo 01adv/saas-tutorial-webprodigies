@@ -1,4 +1,12 @@
-import { Dock, GridIcon, HeartIcon, Megaphone, SubtitlesIcon, Text, WheatIcon } from "lucide-react"
+import {
+    Dock,
+    GridIcon,
+    HeartIcon,
+    Megaphone,
+    SubtitlesIcon,
+    Text,
+    WheatIcon,
+} from "lucide-react"
 
 export type CreateGroupPlaceholderProps = {
     id: string
@@ -37,7 +45,6 @@ export const CREATE_GROUP_PLACEHOLDER: CreateGroupPlaceholderProps[] = [
         label: "Host unlimited courses",
         //   icon: <Courses />,
         icon: <SubtitlesIcon />,
-
     },
     {
         id: "6",

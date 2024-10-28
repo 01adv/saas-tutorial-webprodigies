@@ -8,9 +8,6 @@
 //     stripeId?: string
 // }
 
-
-
-
 // const PaymentForm = ({ affiliate, userId, stripeId }: Props) => {
 
 //     // const payments = usePayments(userId, affiliate);
@@ -74,7 +71,6 @@ const PaymentForm = ({ affiliate, userId, stripeId }: Props) => {
                     slidesOffsetBefore={28}
                 />
 
-
                 <div className="px-7 mb-2">
                     <ErrorMessage
                         errors={errors}
@@ -115,10 +111,13 @@ const PaymentForm = ({ affiliate, userId, stripeId }: Props) => {
                 </div>
                 <div className="px-7 flex flex-col gap-5">
                     <p className="text-sm text-themeTextGray">
-                        Cancel anytime with 1-click. By clicking below, you accept
-                        our terms.
+                        Cancel anytime with 1-click. By clicking below, you
+                        accept our terms.
                     </p>
-                    <Link className="text-sm text-themeTextGray" href={"/explore"}>
+                    <Link
+                        className="text-sm text-themeTextGray"
+                        href={"/explore"}
+                    >
                         Skip for now
                     </Link>
                     <Button

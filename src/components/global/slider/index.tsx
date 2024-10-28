@@ -24,8 +24,13 @@ export const Slider = ({ children, overlay, label, ...rest }: SliderProps) => {
                     <div className="absolute w-[40px] slider-overlay-rev right-0 h-full z-50" />
                 </>
             )}
-            {label && <Label className="pl-7 mb-3 text-themeTextGray">{label}</Label>}
-            <Swiper modules={[Navigation, Pagination, Autoplay, FreeMode]} {...rest}>
+            {label && (
+                <Label className="pl-7 mb-3 text-themeTextGray">{label}</Label>
+            )}
+            <Swiper
+                modules={[Navigation, Pagination, Autoplay, FreeMode]}
+                {...rest}
+            >
                 {children}
             </Swiper>
         </div>
